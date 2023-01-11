@@ -497,17 +497,17 @@
                              <input type="hidden" name="_next" value="https://heng-le.github.io/thankyou.html">
 
                              <div class="form-row">
-                                <div class="control-group col-sm-6">
+<!--                                 <div class="control-group col-sm-6">
                                     <input type="email" name="email" placeholder = "Please enter your email address" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <input type="text" name="message" placeholder = "Write your message here!" required>
                                     <p class="help-block text-danger"></p>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                <input type="email" class="form-control p-4" id="subject" name="email" placeholder="Please enter your email address"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -515,6 +515,7 @@
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
                                     required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
+                                <input type="text" name="message" placeholder = "Write your message here!" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
