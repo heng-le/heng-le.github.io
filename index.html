@@ -492,16 +492,38 @@
                         <div id="success"></div>
                          <form action="https://formsubmit.co/d276011c0d31cf642a4a8e91af6084db" method="POST">
                              <input type="hidden" name="_captcha" value="false">
-                             <input type="email" name="email" placeholder = "Please enter your email address" required>
                              <input type="hidden" name="_subject" value="New submission from Website!">
                              <input type="hidden" name="_template" value="table">
-                             <input type="hidden" name="_next" value="thankyou.html">
-                             <input type="text" name="message" placeholder = "Write your message here!" required>
-                         
-                      
+                             <input type="hidden" name="_next" value="https://heng-le.github.io/thankyou.html">
+
+                             <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="email" name="email" placeholder = "Please enter your email address" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="text" name="message" placeholder = "Write your message here!" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+
                              <button type="submit">Send</button>
                          </form>
-                        
                         
 <!--                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
