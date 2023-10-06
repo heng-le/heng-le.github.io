@@ -256,43 +256,45 @@
     <!-- Globe start -->
     <head>
       <style> body { margin: 0; } </style>
-    
-      <script src="https://unpkg.com/three"></script>
-      <script src="https://unpkg.com/topojson-client"></script>
-    
+
       <script src="https://unpkg.com/globe.gl"></script>
-    <!--  <script src="../../dist/globe.gl.js"></script>-->
+        <!--  <script src="../../dist/globe.gl.js"></script>-->
     </head>
+
+        <body>
+          <div id="globeViz"></div>
+        
+          <script>
+            // Gen random data
+            const N = 300;
+            const gData = [...Array(N).keys()].map(() => ({
+              lat: (Math.random() - 0.5) * 180,
+              lng: (Math.random() - 0.5) * 360,
+              size: Math.random() / 3,
+              color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)]
+            }));
+        
+            Globe()
+              .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-night.jpg')
+              .pointsData(gData)
+              .pointAltitude('size')
+              .pointColor('color')
+            (document.getElementById('globeViz'))
+        
+          </script>
+        </body>
     
-    <body>
-      <div id="globeViz"></div>
-    
-      <script>
-        const world = Globe()
-          (document.getElementById('globeViz'))
-          .backgroundColor('rgba(0,0,0,0)')
-          .showGlobe(false)
-          .showAtmosphere(false);
-    
-        fetch('https://unpkg.com/world-atlas/land-110m.json').then(res => res.json())
-          .then(landTopo => {
-            world
-              .polygonsData(topojson.feature(landTopo, landTopo.objects.land).features)
-              .polygonCapMaterial(new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide }))
-              .polygonSideColor(() => 'rgba(0,0,0,0)');
-          });
-    
-      function animate() {
-        world.controls().autoRotate = true; // Set autoRotate to true
-        world.controls().autoRotateSpeed = 1; // Adjust the rotation speed as needed
-    
-        requestAnimationFrame(animate);
-        world.tick();
-    }
-    
-    animate();
-      </script>
-    </body>
+          function animate() {
+            world.controls().autoRotate = true; // Set autoRotate to true
+            world.controls().autoRotateSpeed = 1; // Adjust the rotation speed as needed
+        
+            requestAnimationFrame(animate);
+            world.tick();
+        }
+        
+        animate();
+          </script>
+        </body>
 
     <!-- Globe end --> 
 
