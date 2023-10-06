@@ -279,11 +279,9 @@
               .pointsData(gData)
               .pointAltitude('size')
               .pointColor('color')
+              .backgroundColor('#FFFFFF') 
             (document.getElementById('globeViz'))
-        
-          </script>
-        </body>
-    
+              
           function animate() {
             world.controls().autoRotate = true; // Set autoRotate to true
             world.controls().autoRotateSpeed = 1; // Adjust the rotation speed as needed
