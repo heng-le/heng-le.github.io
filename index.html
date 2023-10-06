@@ -253,6 +253,49 @@
     </div>
      <!-- Skill End -->
 
+    <!-- Globe start -->
+    <head>
+      <style> body { margin: 0; } </style>
+    
+      <script src="https://unpkg.com/three"></script>
+      <script src="https://unpkg.com/topojson-client"></script>
+    
+      <script src="https://unpkg.com/globe.gl"></script>
+    <!--  <script src="../../dist/globe.gl.js"></script>-->
+    </head>
+    
+    <body>
+      <div id="globeViz"></div>
+    
+      <script>
+        const world = Globe()
+          (document.getElementById('globeViz'))
+          .backgroundColor('rgba(0,0,0,0)')
+          .showGlobe(false)
+          .showAtmosphere(false);
+    
+        fetch('https://unpkg.com/world-atlas/land-110m.json').then(res => res.json())
+          .then(landTopo => {
+            world
+              .polygonsData(topojson.feature(landTopo, landTopo.objects.land).features)
+              .polygonCapMaterial(new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide }))
+              .polygonSideColor(() => 'rgba(0,0,0,0)');
+          });
+    
+      function animate() {
+        world.controls().autoRotate = true; // Set autoRotate to true
+        world.controls().autoRotateSpeed = 1; // Adjust the rotation speed as needed
+    
+        requestAnimationFrame(animate);
+        world.tick();
+    }
+    
+    animate();
+      </script>
+    </body>
+
+    <!-- Globe end --> 
+
     <!-- Services Start
     <div class="container-fluid pt-5" id="service">
         <div class="container">
