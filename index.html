@@ -22,6 +22,29 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/three"></script>
+    <script src="https://unpkg.com/topojson-client"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+
+    <style>
+      #globeContainer {
+        /* styles for the globe container */
+        width: 100px; /* Adjust as necessary */
+        height: 100px; /* Adjust as necessary */
+        /* Other styling as needed */
+      }
+
+      #globeViz {
+        /* styles for the globe itself */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -254,46 +277,7 @@
      <!-- Skill End -->
 
     <!-- Globe start -->
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Interactive Globe</title>
-      <style>
-      body, html {
-        height: 100%; /* full height of the viewport */
-        margin: 0; /* it's common practice to reset margin to 0 */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff; 
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-    
-      #globeContainer {
-        position: center;
-        width: 100px; /* or whatever your preferred size is */
-        height: 100px; /* or whatever your preferred size is */
-        /* Additional styles for the container if needed */
-      }
-    
-      #globeViz {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        /* Ensuring the globe visualization fills its container */
-      }
-      </style>
       
-      <!-- External libraries -->
-      <script src="https://unpkg.com/three"></script>
-      <script src="https://unpkg.com/topojson-client"></script>
-      <script src="https://unpkg.com/globe.gl"></script>
-    </head>
-    
-    <body>
       <div id="chartdiv"> <!-- Container element -->
         <div id="globeViz"></div> <!-- Globe element -->
       </div>
@@ -334,7 +318,6 @@
             world.controls().autoRotate = false; // Stops the rotation when the mouse leaves
         });
       </script>
-    </body>
 
     <!-- Globe end --> 
 
