@@ -28,21 +28,20 @@
     <script src="https://unpkg.com/globe.gl"></script>
 
     <style>
-       #chartdiv {
-      width: 100%; /* or any specific size */
-      height: 100%; /* or any specific size */
-      position: relative; /* important for absolute positioning of children */
-      overflow: hidden; /* to prevent overflow issues */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #globeViz {
-      position: absolute; /* absolute within #chartdiv */
-      width: 100%;  /* take full width of the parent */
-      height: 100%; /* take full height of the parent */
-    }
+      #chartdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px; /* or whatever fixed height you prefer */
+        width: 100%;
+      }
+      /* Ensure the globe takes the size of the container */
+      #globeViz {
+        width: 100%;
+        height: 100%;
+      }
     </style>
+
 
 
 
