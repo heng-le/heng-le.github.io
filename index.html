@@ -27,32 +27,25 @@
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://unpkg.com/globe.gl"></script>
 
-<style>
-      body, html {
-        height: 100%; /* Full height to make centering the globe easier */
-        margin: 0;
-        display: flex; /* Enables flexbox for children */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        background-color: #ffffff;
-      }
-    
+    <style>
       #chartdiv {
-        width: 50vw; /* use viewport widths for size, or set a specific size in pixels */
-        height: 50vw; /* making the height equal to the width maintains the globe's aspect ratio */
-        max-width: 600px; /* limits the maximum size */
-        max-height: 600px; /* limits the maximum size */
-        position: relative; /* necessary for absolute positioning of children */
+        /* styles for the globe container */
+        width: 600px; /* Adjust as necessary */
+        height: 600px; /* Adjust as necessary */
+        /* Other styling as needed */
+        position: relative; /* Added to position the inner globeViz correctly */
       }
     
       #globeViz {
+        /* styles for the globe itself */
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; /* occupy full parent width */
-        height: 100%; /* occupy full parent height */
+        right: 0;
+        bottom: 0;
       }
     </style>
+
 
 
 </head>
