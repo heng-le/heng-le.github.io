@@ -277,23 +277,6 @@
     </div>
      <!-- Skill End -->
 
-    <!-- Globe Start -->
-    <div class="container-fluid py-5" id="globe-section">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Globe</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Explore The World</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div id="chartdiv" style="width: 100%; height: 100%;"> <!-- Container element -->
-                        <div id="globeViz"></div> <!-- Globe element -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Globe End -->
 
     <!-- Services Start
     <div class="container-fluid pt-5" id="service">
@@ -646,45 +629,7 @@
     <script src="mail/contact.js"></script>
    
 
-    <!-- Template Javascript for Globe-->
-    <script src="js/main.js"></script>
-        <script>
-        // Your globe script is here
-        // Initializing the globe
-        const world = Globe()(document.getElementById('globeViz'))
-          .backgroundColor('rgba(0,0,0,0)')
-          .showGlobe(false)
-          .showAtmosphere(false);
 
-        // Fetching the geo data and setting up the globe visuals
-        fetch('https://unpkg.com/world-atlas/land-110m.json')
-          .then(res => res.json())
-          .then(landTopo => {
-            world
-              .polygonsData(topojson.feature(landTopo, landTopo.objects.land).features)
-              .polygonCapMaterial(new THREE.MeshLambertMaterial({ color: 'darkslategrey', side: THREE.DoubleSide }))
-              .polygonSideColor(() => 'rgba(0,0,0,0)');
-          });
-
-        // Animation loop to keep rendering the globe
-        function animate() {
-          world.controls().autoRotate = true; // Auto-rotate feature
-          world.controls().autoRotateSpeed = 1.0; // Speed of rotation
-          requestAnimationFrame(animate);
-          world.tick();
-        }
-        animate(); // Start the rendering loop
-
-        // Event listeners for mouse interaction
-        document.getElementById('chartdiv').addEventListener('mouseenter', function() {
-            world.controls().autoRotate = true;
-            world.controls().autoRotateSpeed = 1.0; // Same speed as in the animate function
-        });
-
-        document.getElementById('chartdiv').addEventListener('mouseleave', function() {
-            world.controls().autoRotate = false; // Stops the rotation when the mouse leaves
-        });
-    </script>
 </body>
 
 </html>
