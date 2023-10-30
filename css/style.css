@@ -9976,22 +9976,3 @@ h6,
   list-style-type: none;
 }
 
-.unique-globe-class {
-  /* Your custom styles for the globe's container will go here. */
-  /* For example, if you want this container to ignore the Bootstrap maximum width constraints: */
-  max-width: none; /* This will allow the container to fill the width of its parent. */
-
-  /* However, for design consistency, you might want to set a max-width: */
-  max-width: 1200px; /* This ensures your globe section doesn't get too wide on large screens. */
-
-  /* You can also add other styling as needed, examples below: */
-  padding: 20px; /* This can add some space inside the container. */
-  margin: 0 auto; /* This can help in centering if the max-width is less than the parent's width. */
-}
-
-/* Don't forget to ensure that your globe visualization fits well within the container you've customized. */
-#chartdiv {
-  width: 100%; /* Adjust as necessary, ensuring it doesn't overflow its parent container */
-  height: 600px; /* Or whatever height is appropriate */
-  /* Other styles as needed */
-}
