@@ -1,0 +1,443 @@
+2023-10-16 00:36:57|ERROR|NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Bank._accounts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-10-16 00:38:10|ERROR|NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Bank._accounts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-10-16 01:14:22|ERROR|NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Bank._accounts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-10-16 01:17:57|ERROR|NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Bank._accounts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-10-16 01:23:39|ERROR|NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Bank._accounts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2023-10-16 01:24:59|ERROR|OperationalError: (sqlite3.OperationalError) no such column: accounts._bank_id
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT accounts._account_number AS accounts__account_number, accounts._type AS accounts__type, accounts._interest_rate AS accounts__interest_rate, accounts._bank_id AS accounts__bank_id 
+FROM accounts) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-10-16 11:44:20|ERROR|OperationalError: (sqlite3.OperationalError) no such column: accounts._bank_id
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT accounts._account_number AS accounts__account_number, accounts._type AS accounts__type, accounts._interest_rate AS accounts__interest_rate, accounts._bank_id AS accounts__bank_id 
+FROM accounts) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-10-16 11:45:53|ERROR|ValueError: Invalid account type specified
+2023-10-16 11:46:55|ERROR|TypeError: __init__() got an unexpected keyword argument 'account_number'
+2023-10-16 11:47:55|ERROR|AttributeError: property 'account_number' of 'CheckingAccount' object has no setter
+2023-10-16 11:50:02|ERROR|AttributeError: property 'account_number' of 'CheckingAccount' object has no setter
+2023-10-16 11:50:08|ERROR|AttributeError: property 'account_number' of 'SavingsAccount' object has no setter
+2023-10-16 11:51:20|ERROR|AttributeError: 'Bank' object has no attribute 'accounts'
+2023-10-16 11:53:49|ERROR|TypeError: Bank.get_account() missing 1 required positional argument: 'account_num'
+2023-10-16 12:05:17|ERROR|ValueError: Invalid account type specified
+2023-10-16 12:10:59|ERROR|ValueError: Invalid account type specified
+2023-10-16 12:27:14|ERROR|TypeError: '_account_id' is an invalid keyword argument for Transaction
+2023-10-16 12:29:54|ERROR|TypeError: __init__() got an unexpected keyword argument '_amt'
+2023-10-16 12:32:16|DEBUG|Created transaction: 1, 1023-09-09
+2023-10-16 12:32:16|ERROR|TypeError: '>=' not supported between instances of 'datetime.date' and 'int'
+2023-10-16 13:22:28|DEBUG|Created transaction: 6, 123
+2023-10-16 13:22:36|ERROR|TypeError: Account.assess_interest_and_fees() missing 1 required positional argument: 'session'
+2023-10-16 13:24:00|DEBUG|Created transaction: 2, 100
+2023-10-16 13:24:04|DEBUG|Created transaction: 2, 0.410000000
+2023-10-16 13:24:04|DEBUG|Triggered interest and fees
+2023-10-16 13:24:11|DEBUG|Created transaction: 2, 0.410000000
+2023-10-16 13:24:11|DEBUG|Triggered interest and fees
+2023-10-16 13:44:49|DEBUG|Created transaction: 1, 2323
+2023-10-16 13:44:59|DEBUG|Created transaction: 1, 434
+2023-10-16 13:45:12|DEBUG|Created transaction: 1, 2.20560000
+2023-10-16 13:45:12|DEBUG|Triggered interest and fees
+2023-10-16 13:45:17|DEBUG|Created transaction: 1, 2.20560000
+2023-10-16 13:45:17|DEBUG|Triggered interest and fees
+2023-10-16 13:45:17|DEBUG|Created transaction: 1, 2.20560000
+2023-10-16 13:45:17|DEBUG|Triggered interest and fees
+2023-10-16 13:45:18|DEBUG|Created transaction: 1, 2.20560000
+2023-10-16 13:45:18|DEBUG|Triggered interest and fees
+2023-10-16 13:45:18|DEBUG|Created transaction: 1, 2.20560000
+2023-10-16 13:45:18|DEBUG|Triggered interest and fees
+2023-10-16 13:45:58|DEBUG|Created transaction: 2, 213
+2023-10-16 13:46:05|DEBUG|Created transaction: 2, 123
+2023-10-16 13:46:15|DEBUG|Created transaction: 2, 234
+2023-10-16 13:48:21|DEBUG|Created transaction: 1, 1232
+2023-10-16 13:49:12|DEBUG|Created transaction: 1, 0.985600000
+2023-10-16 13:49:12|DEBUG|Triggered interest and fees
+2023-10-16 13:49:21|DEBUG|Created transaction: 1, 0.985600000
+2023-10-16 13:49:21|DEBUG|Triggered interest and fees
+2023-10-16 13:49:22|DEBUG|Created transaction: 1, 0.985600000
+2023-10-16 13:49:22|DEBUG|Triggered interest and fees
+2023-10-16 13:49:22|DEBUG|Created transaction: 1, 0.985600000
+2023-10-16 13:49:22|DEBUG|Triggered interest and fees
+2023-10-16 13:49:22|DEBUG|Created transaction: 1, 0.985600000
+2023-10-16 13:49:22|DEBUG|Triggered interest and fees
+2023-10-16 13:54:42|DEBUG|Created transaction: 2, 1232
+2023-10-16 13:54:44|DEBUG|Created transaction: 2, 5.05120000
+2023-10-16 13:54:44|DEBUG|Triggered interest and fees
+2023-10-16 13:56:56|DEBUG|Created transaction: 1, 1232
+2023-10-16 13:56:58|DEBUG|Created transaction: 1, 5.05120000
+2023-10-16 13:56:58|DEBUG|Triggered interest and fees
+2023-10-16 13:57:27|DEBUG|Created transaction: 2, 100
+2023-10-16 13:57:30|DEBUG|Created transaction: 2, 0.0800000000
+2023-10-16 13:57:30|DEBUG|Triggered interest and fees
+2023-10-16 13:58:00|DEBUG|Created transaction: 2, -10
+2023-10-16 13:58:24|DEBUG|Created transaction: 2, -10
+2023-10-16 13:58:27|DEBUG|Created transaction: 2, 0.0720640000
+2023-10-16 13:58:27|DEBUG|Created transaction: 2, -5.4400000000
+2023-10-16 13:58:27|DEBUG|Triggered interest and fees
+2023-10-16 14:01:40|ERROR|AttributeError: 'BankCLI' object has no attribute '_save'
+2023-10-16 14:38:47|DEBUG|Saved to bank.db
+2023-10-16 14:42:57|DEBUG|Saved to bank.db
+2023-10-16 14:43:27|DEBUG|Saved to bank.db
+2023-10-16 14:44:17|DEBUG|Saved to bank.db
+2023-10-16 14:44:23|DEBUG|Created account: 1
+2023-10-16 14:44:23|DEBUG|Saved to bank.db
+2023-10-16 14:48:03|DEBUG|Saved to bank.db
+2023-10-16 14:48:03|DEBUG|Loaded from bank.db
+2023-10-16 14:50:04|DEBUG|Loaded from bank.db
+2023-10-16 15:22:01|DEBUG|Saved to bank.db
+2023-10-16 15:22:16|DEBUG|Loaded from bank.db
+2023-10-16 15:26:40|DEBUG|Loaded from bank.db
+2023-10-16 15:26:48|DEBUG|Created account: 1
+2023-10-16 15:26:48|DEBUG|Saved to bank.db
+2023-10-16 15:26:55|DEBUG|Created transaction: 1, 123
+2023-10-16 15:26:55|DEBUG|Saved to bank.db
+2023-10-16 15:27:05|DEBUG|Created transaction: 1, 0.0984000000
+2023-10-16 15:27:05|DEBUG|Triggered interest and fees
+2023-10-16 15:27:05|DEBUG|Saved to bank.db
+2023-10-17 11:06:09|DEBUG|Loaded from bank.db
+2023-10-17 11:06:16|DEBUG|Created account: 2
+2023-10-17 11:06:16|DEBUG|Saved to bank.db
+2023-10-17 11:06:26|DEBUG|Created account: 3
+2023-10-17 11:06:26|DEBUG|Saved to bank.db
+2023-10-17 11:06:36|DEBUG|Created transaction: 3, 123
+2023-10-17 11:06:36|DEBUG|Saved to bank.db
+2023-10-17 11:06:41|DEBUG|Created transaction: 3, 2323
+2023-10-17 11:06:41|DEBUG|Saved to bank.db
+2023-10-17 11:06:46|DEBUG|Created transaction: 3, 12312
+2023-10-17 12:05:33|DEBUG|Created account: 4
+2023-10-17 12:05:54|DEBUG|Created account: 5
+2023-10-17 13:34:34|DEBUG|Created account: 6
+2023-10-17 15:05:33|DEBUG|Created account: 7
+2023-10-17 15:06:34|DEBUG|Created account: 8
+2023-10-17 15:09:56|DEBUG|Created account: 9
+2023-10-17 15:10:08|DEBUG|Created account: 10
+2023-10-18 02:11:33|ERROR|TypeError: BankAppGUI.__init__() takes 1 positional argument but 2 were given
+2023-10-18 02:30:44|DEBUG|Loaded from bank.db
+2023-10-18 02:30:53|DEBUG|Created account: 11
+2023-10-18 02:30:53|DEBUG|Saved to bank.db
+2023-10-18 02:30:56|DEBUG|Created account: 12
+2023-10-18 02:30:56|DEBUG|Saved to bank.db
+2023-10-18 11:18:19|ERROR|NameError: name 'ttk' is not defined
+2023-10-18 11:20:24|ERROR|AttributeError: 'BankAppGUI' object has no attribute '_account_listbox'
+2023-10-18 11:27:51|ERROR|TypeError: Treeview.heading() got multiple values for argument 'column'
+2023-10-18 11:35:58|ERROR|AttributeError: 'CheckingAccount' object has no attribute 'transactions'
+2023-10-18 13:03:01|DEBUG|Loaded from bank.db
+2023-10-18 13:03:18|DEBUG|Created transaction: 1, -100
+2023-10-18 13:03:33|DEBUG|Created transaction: 1, -10
+2023-10-18 13:03:33|DEBUG|Saved to bank.db
+2023-10-18 15:20:34|ERROR|AttributeError: 'BankAppGUI' object has no attribute '_add_account'
+2023-10-18 15:36:36|DEBUG|Created account: 13
+2023-10-18 15:36:36|DEBUG|Saved to bank.db
+2023-10-18 15:54:00|DEBUG|Created account: 14
+2023-10-18 15:54:01|DEBUG|Saved to bank.db
+2023-10-18 15:56:47|DEBUG|Loaded from bank.db
+2023-10-18 15:56:52|DEBUG|Created account: 15
+2023-10-18 15:56:52|DEBUG|Saved to bank.db
+2023-10-18 15:56:58|DEBUG|Created account: 16
+2023-10-18 15:56:58|DEBUG|Saved to bank.db
+2023-10-18 15:57:36|DEBUG|Loaded from bank.db
+2023-10-18 15:57:42|DEBUG|Created account: 17
+2023-10-18 15:57:42|DEBUG|Saved to bank.db
+2023-10-18 15:57:47|DEBUG|Created account: 18
+2023-10-18 15:57:47|DEBUG|Saved to bank.db
+2023-10-18 15:57:57|DEBUG|Created account: 19
+2023-10-18 15:57:57|DEBUG|Saved to bank.db
+2023-10-18 16:00:59|DEBUG|Loaded from bank.db
+2023-10-18 16:01:06|DEBUG|Created account: 20
+2023-10-18 16:01:06|DEBUG|Saved to bank.db
+2023-10-18 16:01:12|DEBUG|Created account: 21
+2023-10-18 16:01:12|DEBUG|Saved to bank.db
+2023-10-18 16:13:41|DEBUG|Loaded from bank.db
+2023-10-18 16:13:57|DEBUG|Loaded from bank.db
+2023-10-18 16:14:52|DEBUG|Loaded from bank.db
+2023-10-18 16:14:57|DEBUG|Created account: 22
+2023-10-18 16:14:57|DEBUG|Saved to bank.db
+2023-10-18 16:15:03|DEBUG|Created account: 23
+2023-10-18 16:15:03|DEBUG|Saved to bank.db
+2023-10-18 16:15:35|DEBUG|Loaded from bank.db
+2023-10-18 16:15:38|DEBUG|Created account: 24
+2023-10-18 16:15:38|DEBUG|Saved to bank.db
+2023-10-18 16:20:49|DEBUG|Loaded from bank.db
+2023-10-18 16:21:08|DEBUG|Loaded from bank.db
+2023-10-18 16:22:20|DEBUG|Loaded from bank.db
+2023-10-18 16:26:33|DEBUG|Loaded from bank.db
+2023-10-18 16:31:43|DEBUG|Loaded from bank.db
+2023-10-18 16:33:43|DEBUG|Loaded from bank.db
+2023-10-18 16:35:19|DEBUG|Loaded from bank.db
+2023-10-18 16:35:56|DEBUG|Loaded from bank.db
+2023-10-18 16:36:51|DEBUG|Loaded from bank.db
+2023-10-18 16:39:25|DEBUG|Loaded from bank.db
+2023-10-18 16:43:26|DEBUG|Loaded from bank.db
+2023-10-18 16:43:49|DEBUG|Loaded from bank.db
+2023-10-18 17:34:30|DEBUG|Loaded from bank.db
+2023-10-18 17:34:34|DEBUG|Created account: 25
+2023-10-18 17:34:34|DEBUG|Saved to bank.db
+2023-10-18 17:34:42|DEBUG|Created account: 26
+2023-10-18 17:34:42|DEBUG|Saved to bank.db
+2023-10-18 17:36:05|DEBUG|Loaded from bank.db
+2023-10-18 17:37:16|DEBUG|Loaded from bank.db
+2023-10-18 17:37:27|DEBUG|Loaded from bank.db
+2023-10-18 17:37:32|DEBUG|Loaded from bank.db
+2023-10-18 17:37:50|DEBUG|Loaded from bank.db
+2023-10-18 17:39:37|DEBUG|Loaded from bank.db
+2023-10-18 17:43:00|DEBUG|Loaded from bank.db
+2023-10-18 17:43:29|DEBUG|Loaded from bank.db
+2023-10-18 17:43:34|DEBUG|Created account: 27
+2023-10-18 17:43:34|DEBUG|Saved to bank.db
+2023-10-18 17:43:55|DEBUG|Loaded from bank.db
+2023-10-18 17:44:58|DEBUG|Loaded from bank.db
+2023-10-18 17:46:22|DEBUG|Loaded from bank.db
+2023-10-18 17:46:38|DEBUG|Loaded from bank.db
+2023-10-18 17:48:00|DEBUG|Loaded from bank.db
+2023-10-18 17:48:09|DEBUG|Created transaction: 1, 0.0904787200
+2023-10-18 17:48:09|DEBUG|Triggered interest and fees
+2023-10-18 17:48:09|DEBUG|Saved to bank.db
+2023-10-18 17:48:31|DEBUG|Created transaction: 1, 1
+2023-10-18 17:48:48|DEBUG|Created transaction: 1, 12
+2023-10-18 17:48:48|DEBUG|Saved to bank.db
+2023-10-18 17:51:36|DEBUG|Loaded from bank.db
+2023-10-18 17:51:41|DEBUG|Created account: 28
+2023-10-18 17:51:41|DEBUG|Saved to bank.db
+2023-10-18 17:52:08|DEBUG|Loaded from bank.db
+2023-10-18 17:57:27|DEBUG|Loaded from bank.db
+2023-10-18 17:58:11|DEBUG|Loaded from bank.db
+2023-10-18 18:04:48|DEBUG|Loaded from bank.db
+2023-10-18 18:18:30|DEBUG|Loaded from bank.db
+2023-10-18 18:20:44|DEBUG|Loaded from bank.db
+2023-10-18 18:22:46|DEBUG|Loaded from bank.db
+2023-10-18 18:22:46|ERROR|AttributeError: 'BankAppGUI' object has no attribute '_account_treeview'
+2023-10-18 18:23:11|DEBUG|Loaded from bank.db
+2023-10-18 18:24:00|DEBUG|Loaded from bank.db
+2023-10-18 18:28:03|DEBUG|Loaded from bank.db
+2023-10-18 18:29:39|DEBUG|Loaded from bank.db
+2023-10-18 18:53:20|DEBUG|Loaded from bank.db
+2023-10-18 18:58:44|DEBUG|Loaded from bank.db
+2023-10-18 18:58:49|DEBUG|Created account: 29
+2023-10-18 18:58:49|DEBUG|Saved to bank.db
+2023-10-18 18:59:57|DEBUG|Loaded from bank.db
+2023-10-18 19:00:04|DEBUG|Loaded from bank.db
+2023-10-18 19:00:08|DEBUG|Loaded from bank.db
+2023-10-18 19:00:12|DEBUG|Loaded from bank.db
+2023-10-18 19:01:06|DEBUG|Loaded from bank.db
+2023-10-18 19:01:58|DEBUG|Loaded from bank.db
+2023-10-18 19:02:14|DEBUG|Created transaction: 2, 100.0
+2023-10-18 19:02:14|DEBUG|Saved to bank.db
+2023-10-18 19:02:45|DEBUG|Created transaction: 4, 1000.0
+2023-10-18 19:02:45|DEBUG|Saved to bank.db
+2023-10-18 19:02:52|DEBUG|Created transaction: 4, 100.0
+2023-10-18 19:02:52|DEBUG|Saved to bank.db
+2023-10-18 19:02:57|DEBUG|Created transaction: 4, 1000.0
+2023-10-18 19:04:36|DEBUG|Loaded from bank.db
+2023-10-18 19:04:41|DEBUG|Created transaction: 4, 10.0
+2023-10-18 19:04:50|DEBUG|Created transaction: 4, 10.0
+2023-10-18 19:04:50|DEBUG|Saved to bank.db
+2023-10-18 19:05:02|DEBUG|Created transaction: 4, 100.0
+2023-10-18 19:05:02|DEBUG|Saved to bank.db
+2023-10-18 19:05:10|DEBUG|Created transaction: 4, 100.0
+2023-10-18 19:05:20|DEBUG|Created transaction: 4, 100.0
+2023-10-18 19:05:20|DEBUG|Saved to bank.db
+2023-10-18 19:05:30|DEBUG|Created transaction: 4, 100.0
+2023-10-18 19:06:03|DEBUG|Loaded from bank.db
+2023-10-18 19:07:20|DEBUG|Loaded from bank.db
+2023-10-18 19:08:04|DEBUG|Loaded from bank.db
+2023-10-18 19:09:32|DEBUG|Loaded from bank.db
+2023-10-18 19:09:52|DEBUG|Loaded from bank.db
+2023-10-18 19:10:20|DEBUG|Loaded from bank.db
+2023-10-18 19:10:56|DEBUG|Loaded from bank.db
+2023-10-18 19:15:58|DEBUG|Loaded from bank.db
+2023-10-18 19:18:48|DEBUG|Loaded from bank.db
+2023-10-18 19:18:52|DEBUG|Created account: 30
+2023-10-18 19:18:52|DEBUG|Saved to bank.db
+2023-10-18 19:19:01|DEBUG|Created transaction: 22, 100.0
+2023-10-18 19:19:01|DEBUG|Saved to bank.db
+2023-10-18 19:19:13|DEBUG|Created transaction: 23, 100.0
+2023-10-18 19:19:13|DEBUG|Saved to bank.db
+2023-10-18 19:19:20|DEBUG|Created transaction: 23, -100.0
+2023-10-18 19:19:20|DEBUG|Saved to bank.db
+2023-10-18 19:20:41|DEBUG|Loaded from bank.db
+2023-10-18 19:36:48|DEBUG|Loaded from bank.db
+2023-10-18 19:37:08|ERROR|ValueError: max() arg is an empty sequence
+2023-10-18 19:49:05|DEBUG|Loaded from bank.db
+2023-10-18 19:49:18|DEBUG|Created transaction: 1, 10.0
+2023-10-18 19:49:18|DEBUG|Saved to bank.db
+2023-10-18 19:49:20|DEBUG|Created transaction: 1, 0.10815110297600000000
+2023-10-18 19:49:20|DEBUG|Triggered interest and fees
+2023-10-18 19:49:20|DEBUG|Saved to bank.db
+2023-10-18 19:50:02|DEBUG|Loaded from bank.db
+2023-10-18 19:50:19|DEBUG|Created transaction: 4, 5.37100000000000000000
+2023-10-18 19:50:19|DEBUG|Triggered interest and fees
+2023-10-18 19:50:19|DEBUG|Saved to bank.db
+2023-10-18 19:51:01|DEBUG|Loaded from bank.db
+2023-10-18 19:51:44|DEBUG|Created transaction: 3, 10.02860000000000000000
+2023-10-18 19:51:44|DEBUG|Triggered interest and fees
+2023-10-18 19:51:44|DEBUG|Saved to bank.db
+2023-10-18 19:52:03|DEBUG|Created transaction: 6, 10.0
+2023-10-18 19:52:03|DEBUG|Saved to bank.db
+2023-10-18 19:52:11|DEBUG|Created transaction: 6, 0.04100000000000000000
+2023-10-18 19:52:11|DEBUG|Triggered interest and fees
+2023-10-18 19:52:11|DEBUG|Saved to bank.db
+2023-10-18 19:52:24|DEBUG|Created transaction: 5, 10.0
+2023-10-18 19:52:24|DEBUG|Saved to bank.db
+2023-10-18 19:52:26|DEBUG|Created transaction: 5, 0.00800000000000000000
+2023-10-18 19:52:26|DEBUG|Created transaction: 5, -5.4400000000
+2023-10-18 19:52:26|DEBUG|Triggered interest and fees
+2023-10-18 19:52:26|DEBUG|Saved to bank.db
+2023-10-18 19:52:34|DEBUG|Created transaction: 7, 10.0
+2023-10-18 19:52:34|DEBUG|Saved to bank.db
+2023-10-18 19:52:37|DEBUG|Created transaction: 7, 0.00800000000000000000
+2023-10-18 19:52:37|DEBUG|Created transaction: 7, -5.4400000000
+2023-10-18 19:52:37|DEBUG|Triggered interest and fees
+2023-10-18 19:52:37|DEBUG|Saved to bank.db
+2023-10-18 19:54:24|DEBUG|Loaded from bank.db
+2023-10-18 19:54:38|DEBUG|Created transaction: 9, 10.0
+2023-10-18 19:54:38|DEBUG|Saved to bank.db
+2023-10-18 19:55:25|DEBUG|Saved to bank.db
+2023-10-18 19:55:29|DEBUG|Created account: 1
+2023-10-18 19:55:29|DEBUG|Saved to bank.db
+2023-10-18 19:56:24|DEBUG|Loaded from bank.db
+2023-10-18 19:56:36|DEBUG|Loaded from bank.db
+2023-10-18 19:57:06|DEBUG|Loaded from bank.db
+2023-10-18 19:58:37|DEBUG|Loaded from bank.db
+2023-10-18 19:59:58|DEBUG|Loaded from bank.db
+2023-10-18 19:59:58|ERROR|AttributeError: 'BankAppGUI' object has no attribute '_add_interest'
+2023-10-18 20:00:57|DEBUG|Loaded from bank.db
+2023-10-18 20:02:34|DEBUG|Loaded from bank.db
+2023-10-18 20:05:16|DEBUG|Loaded from bank.db
+2023-10-18 20:05:50|DEBUG|Loaded from bank.db
+2023-10-18 20:07:33|DEBUG|Loaded from bank.db
+2023-10-18 20:07:33|ERROR|AttributeError: 'BankAppGUI' object has no attribute 'protocol'
+2023-10-18 20:07:40|DEBUG|Loaded from bank.db
+2023-10-18 20:09:24|DEBUG|Loaded from bank.db
+2023-10-18 20:10:35|DEBUG|Loaded from bank.db
+2023-10-18 20:10:50|DEBUG|Loaded from bank.db
+2023-10-18 21:39:24|DEBUG|Loaded from bank.db
+2023-10-18 21:41:04|DEBUG|Created transaction: 1, 100.0
+2023-10-18 21:41:04|DEBUG|Saved to bank.db
+2023-10-18 21:47:27|DEBUG|Loaded from bank.db
+2023-10-18 21:49:52|DEBUG|Loaded from bank.db
+2023-10-18 21:49:52|ERROR|AttributeError: 'BankAppGUI' object has no attribute 'display_help'
+2023-10-18 21:50:32|DEBUG|Loaded from bank.db
+2023-10-18 21:52:08|DEBUG|Loaded from bank.db
+2023-10-18 21:52:16|DEBUG|Loaded from bank.db
+2023-10-18 21:52:46|DEBUG|Loaded from bank.db
+2023-10-18 21:52:51|DEBUG|Loaded from bank.db
+2023-10-18 21:55:43|DEBUG|Loaded from bank.db
+2023-10-18 21:56:44|DEBUG|Loaded from bank.db
+2023-10-18 21:57:11|DEBUG|Loaded from bank.db
+2023-10-18 21:58:08|DEBUG|Loaded from bank.db
+2023-10-18 21:58:44|DEBUG|Loaded from bank.db
+2023-10-18 22:03:17|DEBUG|Loaded from bank.db
+2023-10-18 22:04:22|DEBUG|Created transaction: 1, 0.08000000000000000000
+2023-10-18 22:04:22|DEBUG|Triggered interest and fees
+2023-10-18 22:04:22|DEBUG|Saved to bank.db
+2023-10-18 22:05:25|DEBUG|Loaded from bank.db
+2023-10-18 22:05:58|DEBUG|Created account: 2
+2023-10-18 22:05:58|DEBUG|Saved to bank.db
+2023-10-18 22:06:34|DEBUG|Created transaction: 1, 6.257477821872026e+20
+2023-10-18 22:06:34|DEBUG|Saved to bank.db
+2023-10-18 22:07:07|DEBUG|Created transaction: 2, 5578578508.0
+2023-10-18 22:07:07|DEBUG|Saved to bank.db
+2023-10-18 22:07:18|DEBUG|Created transaction: 2, 22872171.88280000000000000000
+2023-10-18 22:07:18|DEBUG|Triggered interest and fees
+2023-10-18 22:07:18|DEBUG|Saved to bank.db
+2023-10-18 22:07:30|DEBUG|Created transaction: 1, 500598225749762113.6160640000
+2023-10-18 22:07:30|DEBUG|Triggered interest and fees
+2023-10-18 22:07:30|DEBUG|Saved to bank.db
+2023-10-18 22:07:50|DEBUG|Created account: 3
+2023-10-18 22:07:50|DEBUG|Saved to bank.db
+2023-10-18 22:08:09|DEBUG|Created transaction: 3, 6.0
+2023-10-18 22:08:09|DEBUG|Saved to bank.db
+2023-10-18 22:08:16|DEBUG|Created transaction: 3, 0.02460000000000000000
+2023-10-18 22:08:16|DEBUG|Triggered interest and fees
+2023-10-18 22:08:16|DEBUG|Saved to bank.db
+2023-10-18 22:08:53|DEBUG|Created account: 4
+2023-10-18 22:08:53|DEBUG|Saved to bank.db
+2023-10-18 22:11:00|DEBUG|Loaded from bank.db
+2023-10-18 22:11:36|DEBUG|Loaded from bank.db
+2023-10-18 22:36:29|DEBUG|Loaded from bank.db
+2023-10-18 22:45:38|DEBUG|Loaded from bank.db
+2023-10-18 22:45:38|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 253, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 44, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:45:47|DEBUG|Loaded from bank.db
+2023-10-18 22:45:53|DEBUG|Loaded from bank.db
+2023-10-18 22:45:53|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 253, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 44, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:46:52|DEBUG|Loaded from bank.db
+2023-10-18 22:46:52|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 255, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 46, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:47:57|DEBUG|Loaded from bank.db
+2023-10-18 22:47:57|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 255, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 46, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:49:22|DEBUG|Loaded from bank.db
+2023-10-18 22:49:22|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 255, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 46, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:49:31|DEBUG|Loaded from bank.db
+2023-10-18 22:49:31|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 252, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 50, in __init__
+    self._info_label = ctk.CLabel(self._window, text="Bank HL's GUI", font="Arial 20", background_color="blue", text_color="white")
+                       ^^^^^^^^^^
+AttributeError: module 'customtkinter' has no attribute 'CLabel'
+2023-10-18 22:49:45|DEBUG|Loaded from bank.db
+2023-10-18 22:49:45|ERROR|Uncaught exception
+Traceback (most recent call last):
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 253, in <module>
+    BankAppGUI()
+  File "c:\Users\slyqb\Desktop\Sem Abroad\Y3S1\OOP\Assignment 3\home\gui.py", line 44, in __init__
+    self._info_label.config(font=("Arial", 24, "bold"))
+    ^^^^^^^^^^^^^^^^
+AttributeError: 'BankAppGUI' object has no attribute '_info_label'
+2023-10-18 22:49:57|DEBUG|Loaded from bank.db
+2023-10-18 22:51:12|DEBUG|Loaded from bank.db
+2023-10-18 22:52:04|DEBUG|Loaded from bank.db
+2023-10-18 22:53:17|DEBUG|Loaded from bank.db
+2023-10-18 22:53:31|DEBUG|Loaded from bank.db
+2023-10-18 22:59:27|DEBUG|Loaded from bank.db
+2023-10-18 23:06:38|DEBUG|Loaded from bank.db
+2023-10-18 23:08:19|DEBUG|Loaded from bank.db
+2023-10-18 23:08:51|DEBUG|Loaded from bank.db
+2023-10-18 23:09:36|DEBUG|Loaded from bank.db
+2023-10-18 23:10:00|DEBUG|Loaded from bank.db
+2023-10-18 23:10:04|DEBUG|Created account: 5
+2023-10-18 23:10:04|DEBUG|Saved to bank.db
+2023-10-18 23:10:25|DEBUG|Created transaction: 4, 100.0
+2023-10-18 23:10:25|DEBUG|Saved to bank.db
+2023-10-18 23:11:15|DEBUG|Loaded from bank.db
+2023-10-18 23:11:43|DEBUG|Loaded from bank.db
+2023-10-18 23:11:50|DEBUG|Created transaction: 4, 0.08000000000000000000
+2023-10-18 23:11:50|DEBUG|Triggered interest and fees
+2023-10-18 23:11:50|DEBUG|Saved to bank.db
+2023-10-18 23:14:22|DEBUG|Loaded from bank.db
+2023-10-18 23:18:26|DEBUG|Loaded from bank.db
+2023-10-18 23:18:40|DEBUG|Loaded from bank.db
