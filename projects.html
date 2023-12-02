@@ -6,11 +6,7 @@
         <meta name="description" content="" />
         <!-- Favicon -->
         <link rel="shortcut icon" href="lib/387.ico" type="image/x-icon">
-
-        <!-- Icon credit to Freepik on flaticon.com-->
-        <link rel="icon" type="image/x-icon" href="assets/img/leaf.png" />
-        
-        <!-- Font Awesome icons (free version)-->
+        <!-- Font Awesome icons -->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
@@ -64,9 +60,9 @@
 
         /*Back Button*/
         .back-button {
-        background-color: #000000; 
+        background-color: #ffffff; 
         border: none; 
-        color: white; 
+        color: rgb(0, 0, 0); 
         padding: 1px 1px; 
         text-align: center; 
         text-decoration: none; 
@@ -79,12 +75,13 @@
         }
 
         .back-button:hover {
-        background-color: #333333; /* Darker shade of green on hover */
+        background-color: #b8b8b8; /* Darker shade of green on hover */
         }
         </style>
     </head>
 
 <body>
+
 <!---------------------------------------------------- Projects ---------------------------------------------------->
 <section class="projects-section bg-light" id="projects">
     <div class="container">
@@ -153,14 +150,14 @@
                             
                             <!-- Animated Cards -->
                             <div class="flip">
-                                <div class="front" style="background-image: url(https://images.pexels.com/photos/4046791/pexels-photo-4046791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
-                                   <h1 class="text-shadow">Guess the Number</hi>
+                                <div class="front" style="background-image: url('lib/bank.png');">
+                                   <!-- <h1 class="text-shadow">Bank GUI</hi> -->
                                 </div>
                                 <div class="back">
-                                   <h2>Guess the Number</h2>
-                                   <p class="animatedcardpara">It chooses a number between 1 and 100 and challenges the player to guess it in 10 turns.</p>
-                                   <a class="btn btn-primary projectbtn" href="./projects/Guess the Number/main.html">Live Demo</a>
-                                   <a class="btn btn-primary projectbtn" href="https://github.com/mschinagaines/Guess-the-Number-Game">Code</a>
+                                   <h2>Bank GUI</h2>
+                                   <p class="animatedcardpara">A simple bank CLI and GUI created using OOP concepts, tkinter, and SQLAlchemy.</p>
+                                   <!-- <a class="btn btn-primary projectbtn" href="./projects/Guess the Number/main.html">Live Demo</a> -->
+                                   <a class="btn btn-primary projectbtn" href=https://github.com/heng-le/Bank-GUI target = '_blank'>Code</a>
                                 </div>
                             </div>
                             <!-- -->
@@ -171,8 +168,11 @@
         </div>
     </div>
     <button onclick="goBack()" class="back-button">Back</button>
+
 </section>
 </body>
+
+
 <script>
     function goBack() {
         window.history.back();
