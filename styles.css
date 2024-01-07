@@ -541,20 +541,9 @@ pre code {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
-  /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21);
-  animation: color 12s ease-in-out infinite; */
+  overflow: auto;
+
 }
-/* @keyframes color {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
-} */
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -10266,6 +10255,8 @@ body {
 
 .projects-section {
   padding: 1rem 0;
+  max-height: 100vh;
+  overflow: auto;
 }
 .projects-section .featured-text {
   padding: 2rem;
