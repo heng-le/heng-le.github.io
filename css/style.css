@@ -10042,6 +10042,11 @@ a:hover {
   transform: scaleX(1);
 }
 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--primary) !important;
+}
+
 #home {
   background: radial-gradient(120% 120% at 10% 10%, rgba(255, 122, 26, 0.15), transparent), radial-gradient(120% 120% at 90% 20%, rgba(255, 122, 26, 0.12), transparent), var(--bg);
 }
