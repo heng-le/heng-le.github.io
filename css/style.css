@@ -10048,9 +10048,25 @@ a:hover {
 }
 
 #home {
-  background: radial-gradient(120% 120% at 10% 10%, rgba(255, 122, 26, 0.15), transparent), radial-gradient(120% 120% at 90% 20%, rgba(255, 122, 26, 0.12), transparent), var(--bg);
+  background: radial-gradient(120% 120% at 10% 10%, rgba(70, 120, 255, 0.22), transparent),
+    radial-gradient(120% 120% at 90% 20%, rgba(40, 200, 210, 0.18), transparent),
+    #0b0f1e;
   position: relative;
   overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% -10%;
+  background:
+    radial-gradient(60% 40% at 15% 35%, rgba(90, 160, 255, 0.35), transparent 60%),
+    radial-gradient(70% 45% at 70% 20%, rgba(80, 220, 200, 0.28), transparent 65%),
+    radial-gradient(50% 35% at 85% 65%, rgba(160, 120, 255, 0.22), transparent 60%);
+  filter: blur(10px);
+  opacity: 0.9;
+  z-index: 0;
+  animation: aurora-drift 18s ease-in-out infinite alternate;
 }
 
 #home::after {
@@ -10122,8 +10138,8 @@ a:hover {
 }
 
 @keyframes snow-fall {
-  0% { transform: translate3d(0, -10vh, 0); opacity: 1; }
-  100% { transform: translate3d(0, 115vh, 0); opacity: 0.3; }
+  0% { top: -10vh; opacity: 1; }
+  100% { top: 115vh; opacity: 0.3; }
 }
 
 @keyframes snow-sway {
@@ -10146,6 +10162,11 @@ a:hover {
 @keyframes snow-bg {
   from { background-position: 0 0; }
   to { background-position: 0 140px; }
+}
+
+@keyframes aurora-drift {
+  0% { transform: translate3d(-2%, -1%, 0) scale(1); }
+  100% { transform: translate3d(2%, 1%, 0) scale(1.03); }
 }
 
 /* Highly randomized flake positions, speeds, and delays */
